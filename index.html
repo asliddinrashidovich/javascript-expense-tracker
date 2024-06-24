@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="header">Expense Tracker</h1>
+        <div class="card">
+            <!-- total -->
+            <div class="total-box">
+                <div class="total-balance">
+                    <h5>TOTAL BALANCE</h5>
+                    <h1>$0.00</h1>
+                </div>
+                <div class="income-expence">
+                    <div class="income">
+                        <h5>INCOME</h5>
+                        <h2>+$0.00</h2>
+                    </div>
+                    <div class="expence">
+                        <h5>EXPENSE</h5>
+                        <h2>-$0.00</h2>
+                    </div>
+                </div>
+            </div>
 
+            <!-- transaction -->
+            <div class="transaction-box">
+                <h2 class="trans-header">Transaction</h2>
+                <div class="lists">
+                    <h3 class="unlisted">No transaction.</h3>
+                </div>
+            </div>
+
+            <!-- adder -->
+            <div class="add-box">
+                <h2 class="add-header">Add Transaction</h2>
+                <form>
+                    <div class="changer-box">
+                        <label for="radio" id="label1-css">
+                            EXPENSE
+                        </label>
+                        <input type="radio" id="radio" name="radio" checked>
+
+                        <label for="radio2" id="label2-css">
+                            INCOME
+                        </label>
+                        <input type="radio" id="radio2" name="radio">
+                    </div>
+                    <div class="name-input-box">
+                        <label>NAME</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="amount-date">
+                        <div class="amount-input-box">
+                            <label>AMOUNT</label><br>
+                            <input type="number">
+                        </div>
+                        <div class="date-input-box">
+                            <label>DATE</label><br>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <button class="btn" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
